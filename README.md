@@ -1,4 +1,13 @@
-M.Sc. Data and Web Science 2020-2021
-Technologies for Big Data Analytics
+# M.Sc. Data and Web Science 2020-2021
 
-Assignment: “Scalable Processing of Dominance-Based Queries”
+### Course: Technologies for Big Data Analytics
+
+**Assignment:** Scalable Processing of Dominance-Based Queries
+
+### Team members 
+* Panagiotis Papaemmanouil, 56
+* Theodoros Konstantinidis, 
+
+---
+
+
