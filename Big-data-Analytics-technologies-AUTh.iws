@@ -23,10 +23,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab5cde8-241c-4bec-82f7-b4443fc60516" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+    <list default="true" id="5ab5cde8-241c-4bec-82f7-b4443fc60516" name="Default Changelist" comment="Upload Course assignment, TODO file and fix README.md">
       <change beforePath="$PROJECT_DIR$/Big-data-Analytics-technologies-AUTh.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Big-data-Analytics-technologies-AUTh.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605358816784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Upload Course assignment, TODO file and fix README.md">
+      <created>1605359992169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605359992169</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize project structure from IntelliJ" />
     <MESSAGE value="initial commit of src directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit of src directory" />
+    <MESSAGE value="Upload Course assignment, TODO file and fix README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload Course assignment, TODO file and fix README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="443" y="130" width="1024" height="845" key="#Project_Structure" timestamp="1605358538180">
@@ -127,10 +134,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="662" y="354" width="586" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1605358780787" />
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605358856311">
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605360002906">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1605358856311" />
+    <state x="555" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1605360002906" />
     <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1605359258316">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
