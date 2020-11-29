@@ -5,7 +5,7 @@ import pandas as pnd
 
 gen = np.random.default_rng(seed=12493)
 
-for points in [3000, 10000]:
+for points in [10000, 100000, 1000000, 10000000]:
     for dim in [2, 5, 10]:
         a = 0.0055 * np.ones((dim,dim))
         a = a * (1 - np.tri(*a.shape)) + a * np.tri(*a.shape, k=-1) + 0.01 * np.eye(dim)
@@ -41,13 +41,13 @@ for points in [3000, 10000]:
             col.append("d%d" % i)
 
         df = pnd.DataFrame(data=d1, columns=col)
-        df.to_csv("correlated_%d_%dD.csv" % (points,dim))
+        df.to_csv("correlated_%d_%dD.csv" % (points,dim), index=False)
 
         df = pnd.DataFrame(data=d2, columns=col)
-        df.to_csv("uniform_%d_%dD.csv" % (points,dim))
+        df.to_csv("uniform_%d_%dD.csv" % (points,dim), index=False)
 
         df = pnd.DataFrame(data=d3, columns=col)
-        df.to_csv("normal_%d_%dD.csv" % (points,dim))
+        df.to_csv("normal_%d_%dD.csv" % (points,dim), index=False)
 
         df = pnd.DataFrame(data=d4, columns=col)
-        df.to_csv("anticor_%d_%dD.csv" % (points,dim))
+        df.to_csv("anticor_%d_%dD.csv" % (points,dim), index=False)
