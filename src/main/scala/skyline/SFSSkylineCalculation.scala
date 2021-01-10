@@ -11,7 +11,7 @@ object SFSSkylineCalculation extends Serializable {
     for (i<-1 to array.length - 1)
     {
       var j=0
-      var breaked = false
+      var stopped = false
       breakable
       {
         while (j < arraybuffer.length) {
@@ -20,13 +20,13 @@ object SFSSkylineCalculation extends Serializable {
             j-=1
           }
           else if (dominationCondition.isDominated(arraybuffer(j), array(i))) {
-            breaked = true
+            stopped = true
             break()
           }
           j += 1
         }
       }
-      if(!breaked)
+      if(!stopped)
         arraybuffer+=array(i)
     }
     return arraybuffer.toIterator
@@ -34,6 +34,7 @@ object SFSSkylineCalculation extends Serializable {
   def addScoreAndCalculate(x: Iterator[Array[Double]]):Iterator[Array[Double]]={
     val y = addScoringFunction(x)
     val ysort = sortByScoringFunction(y)
+    //ysort.toList.foreach(println)
     val result = calculate(ysort.map(x=>x._1))
     return result
   }
@@ -80,10 +81,10 @@ object SFSSkylineCalculation extends Serializable {
   def addScoringFunction(array:Iterator[Array[Double]]): Iterator[(Array[Double], Double)] ={
     array.map(x => (x, 0))
       .map(x => {
-        var sum =0.0
+        var sum = 0.0
         for (i<-0 to x._1.length - 1)
         {
-          sum += math.log(x._1(i)+1)
+          sum += math.log(x._1(i))
         }
         (x._1,sum)
       })

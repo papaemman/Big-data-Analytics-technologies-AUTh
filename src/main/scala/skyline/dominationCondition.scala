@@ -9,7 +9,8 @@ object dominationCondition extends Serializable {
     var i = 0
     for (i <- 0 to size - 1) {
       if (x(i) < y(i))
-        flag = true}
+        flag = true
+    }
     return flag}
   def isSmallerEqual(x: Array[Double], y:Array[Double]):Boolean = {
     val size = x.length
