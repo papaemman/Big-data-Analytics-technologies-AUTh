@@ -1,8 +1,13 @@
 package skyline
 
 object dominationCondition extends Serializable {
+
+  // Check if a point x is dominated by a point y
   def isDominated(x: Array[Double], y:Array[Double]): Boolean = {
     return isSmaller(x,y) & isSmallerEqual(x,y)}
+
+  // isSmaller:
+  // returns true if x(i) < y(i) for any i
   def isSmaller(x: Array[Double], y:Array[Double]):Boolean = {
     val size = x.length
     var flag = false
@@ -12,6 +17,9 @@ object dominationCondition extends Serializable {
         flag = true
     }
     return flag}
+
+  // isSmallerEqual:
+  // returns false if x(i) > y(i) for any i
   def isSmallerEqual(x: Array[Double], y:Array[Double]):Boolean = {
     val size = x.length
     var flag = true

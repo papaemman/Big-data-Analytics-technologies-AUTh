@@ -1,4 +1,5 @@
 package working_with_df
+import algorithms.SFSSkylineCalculation
 import org.apache.spark.sql.SparkSession
 
 
@@ -29,6 +30,11 @@ object working_with_df {
 
       // Print the schema of the DataFrame
       df.printSchema()
+
+      //
+
+      // df.mapPartitions(SFSSkylineCalculation.addScoreAndCalculate)
+
 
     }
 }
