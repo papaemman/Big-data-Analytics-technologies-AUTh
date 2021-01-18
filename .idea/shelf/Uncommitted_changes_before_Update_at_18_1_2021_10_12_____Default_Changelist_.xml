@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_18_1_2021_10_12_μ_μ__[Default_Changelist]" date="1611000752132" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_1_2021_10_12_μ_μ__[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 18/1/2021 10:12 μ.μ. [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/scala-2.13/update/update_cache_2.13/output" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/scala-2.13/update/update_cache_2.13/inputs" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/.history3" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/inputs" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/_global/dumpStructure/_global/streams/out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/output" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/streams/_global/updateClassifiers/_global/streams/out" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>
