@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="skyline code testing v.2" />
+    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="added code to ALTOPK, with few mods this package could be final">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALS.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/SFSSkylineCalculation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/SFSTopkCalculation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/dominationCondition.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/scala_develop_topk.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/skyline.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/skylineCalculation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/topk.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/topk_playground.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Big-data-Analytics-technologies-AUTh-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Big-data-Analytics-technologies-AUTh-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +92,7 @@
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.skyline">
+  <component name="RunManager" selected="Application.final_testing">
     <configuration name="HelloSpark" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="HelloSpark" />
       <module name="Big-data-Analytics-technologies-AUTh" />
@@ -95,6 +109,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="final_testing" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="15" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="all_local_skyline_w_topk.topk" />
+      <module name="Big-data-Analytics-technologies-AUTh" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,6 +190,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.skyline" />
+      <item itemvalue="Application.final_testing" />
       <item itemvalue="Application.HelloSpark" />
       <item itemvalue="Application.WordCount" />
     </list>
@@ -219,7 +243,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -229,6 +265,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="skyline code testing" />
     <MESSAGE value="skyline code testing v.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="added code to ALTOPK, with few mods this package could be final" />
+    <option name="LAST_COMMIT_MESSAGE" value="added code to ALTOPK, with few mods this package could be final" />
   </component>
 </project>
