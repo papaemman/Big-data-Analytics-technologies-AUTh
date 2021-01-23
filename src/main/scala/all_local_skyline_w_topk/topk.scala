@@ -9,7 +9,7 @@ object topk {
     println("This is the top-k query application for Spark.")
     println("***********************************************************************************************")
 
-    // Define spark configuration and sparc contect
+    // Define Spark configuration and spark context
     val conf = new SparkConf().setMaster("local").setAppName("skylineCalculator")
     val sc = new SparkContext(conf)
 
@@ -18,7 +18,6 @@ object topk {
 
     // Call ALTOPK method in a specific dataset
     new ALTOPK(inputPath="./datasets/dataset_10000_points_4_dimension_anticorrelated_distribution.csv", sc)
-    //println(System.getProperty("user.dir"))
 
     // End timer
     val timeElapsed = System.nanoTime - start

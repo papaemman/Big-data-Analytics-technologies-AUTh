@@ -38,23 +38,17 @@ class ALTOPK(inputPath: String, sc: SparkContext) extends Serializable {
   var temp = rdd1.toLocalIterator.toArray
   val rdd3 = rdd2.filter(p => SFSTopkCalculation.existsIn(p, temp))
   rdd3.persist()
-
   val rdd3result = rdd3.take(3)
-  rdd3result.foreach(arr => println(arr.toList))
-  println(rdd3.count())
 
 
-  // Total skyline points <<Task 1>>
-  // println("number of local skylines: "+rdd1.count())
 
   // End timer
   val extTime = System.nanoTime
   println("time of extracting local skyline points:"+(extTime-inputTime).asInstanceOf[Double] / 1000000000.0)
 
   // Calculate final skyline set based on individual skyline sets of each partition and collect in driver.
-//  var partitionSkylines = ArrayBuffer[Array[Double]]()
-//  rdd2.collect.foreach(x => SFSTopkCalculation.calculatePartition(partitionSkylines, Iterator(x)))
-  rdd2result.foreach(arr => println(arr.toList))
+//  rdd2result.foreach(arr => println(arr.toList))
+//  rdd3result.foreach(arr => println(arr.toList))
   // println("skyline completed. total skylines:"+partitionSkylines.length)
   println("time of extracting final skylines:"+(System.nanoTime-extTime).asInstanceOf[Double] / 1000000000.0)
 }
