@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="create an additional package to run multiple experiments for different datasets, number of cores and k">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/experiment_times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/experiment_times.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
