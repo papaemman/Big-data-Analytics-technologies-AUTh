@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="Update Data-generation notebook&#10;Update README, TODO and Docs&#10;Debug topk calculation">
-      <change afterPath="$PROJECT_DIR$/docs/experiment_times.txt" afterDir="false" />
+    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="Task 3 (topk + skyline) debugging&#10;Timing">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/SFSSkylineCalculation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/SFSTopkCalculation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/dominationCondition.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALS.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/SFSTopkCalculation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/SFSTopkCalculation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/scala_develop_topk.sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/skyline.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/skylineCalculation.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/topk_playground.sc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala_playground.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala_playground.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala_playground_map.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala_playground_map.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/scala_spark_playground.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/scala_spark_playground.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/topk/ALTOPK.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/topk/SFSTopkCalculation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/topk/SFSTopkCalculation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/topk/topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/topk/topk.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3229885" />
@@ -102,11 +90,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea\libraries" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.final_testing">
+  <component name="RunManager" selected="Application.all_local_skyline_w_topk">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -185,6 +174,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="all_local_skyline_w_topk" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="all_local_skyline_w_topk_experiments.all_local_skyline_w_topk.all_local_skyline_w_topk" />
+      <module name="Big-data-Analytics-technologies-AUTh" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="final_testing" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="15" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -215,9 +211,11 @@
       <item itemvalue="Application.HelloSpark" />
       <item itemvalue="Application.WordCount" />
       <item itemvalue="Application.topk" />
+      <item itemvalue="Application.all_local_skyline_w_topk" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.all_local_skyline_w_topk" />
         <item itemvalue="Application.topk" />
         <item itemvalue="Application.HelloSpark" />
         <item itemvalue="Application.WordCount" />
@@ -262,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611405889237</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Task 3 (topk + skyline) debugging&#10;Timing">
+      <created>1611419743881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611419743881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +302,8 @@
     <MESSAGE value="skyline code testing v.2" />
     <MESSAGE value="added code to ALTOPK, with few mods this package could be final" />
     <MESSAGE value="Update Data-generation notebook&#10;Update README, TODO and Docs&#10;Debug topk calculation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Data-generation notebook&#10;Update README, TODO and Docs&#10;Debug topk calculation" />
+    <MESSAGE value="Task 3 (topk + skyline) debugging&#10;Timing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 3 (topk + skyline) debugging&#10;Timing" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="interactive" value="true" />

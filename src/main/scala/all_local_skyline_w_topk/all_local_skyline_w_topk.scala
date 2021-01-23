@@ -14,7 +14,7 @@ object all_local_skyline_w_topk {
     //    val cores:Int = args(1).toInt
     //    val k: Int = args(2).toInt
 
-    val datapath: String = "./datasets/toy_dataset_2d.csv"
+    val datapath: String = "./datasets/toy_dataset_4d.csv"
     val cores:Int = 3
     val k: Int = 1
 
