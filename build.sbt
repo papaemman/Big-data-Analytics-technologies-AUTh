@@ -2,7 +2,7 @@ name := "Big-data-Analytics-technologies-AUTh"
 
 version := "0.1"
 
-scalaVersion := "2.12.10"
+scalaVersion := "2.12.12"
 
 val sparkVersion = "3.0.1"
 

@@ -1,5 +1,4 @@
 package working_with_df
-import algorithms.SFSSkylineCalculation
 import org.apache.spark.sql.SparkSession
 
 

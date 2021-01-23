@@ -46,3 +46,21 @@ to use the following architecture.
 * **SKFSS skyline calculation**
 
 More on this can be found in [Final Report](docs/report).
+
+---
+
+## Datasets
+
+Note: In order to Run the application you have to create the datasets
+
+Go to `data_gen/` and run the *Data-generation.ipynb* notebook.
+
+**Datasets Degrees of Freedom**: (Distribution) x (Number of points) x (Dimensions)
+
+* Distribution: uniform, normal, correlated, anticorrelated
+
+* Number of points: 10.000, 100.000, 1.000.000
+
+* Dimensions: 2, 4, 10, 50
+
+**Total datasets:** 4 x 3 x 4 = 48

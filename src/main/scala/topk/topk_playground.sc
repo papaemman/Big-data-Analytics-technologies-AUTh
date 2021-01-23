@@ -55,7 +55,7 @@ val sc = new SparkContext(conf)
 // Start timer
 val start = System.nanoTime
 
-val rdd = sc.textFile("/home/user7/Projects/MSc/Big-data-Analytics-technologies-AUTh//datasets/dataset_10000_points_4_dimension_anticorrelated_distribution.csv")
+val rdd = sc.textFile("/home/user7/Projects/MSc/Big-data-Analytics-technologies-AUTh/datasets/dataset_10000_points_4_dimension_anticorrelated_distribution.csv")
 
 // Prepare dataset
 // 1. split on ","

@@ -1,4 +1,5 @@
 // -------------------------------------------------- //
+print("HERE")
 
 // Print simple text
 println("Scala test")
@@ -20,7 +21,7 @@ println("List:" + args(1))
 
 
 // Loops
-val a1=Array(1.0,2.0,3.0)7
+val a1=Array(1.0,2.0,3.0)
 for(i <- 0 until a1.length){
   println("i is: " + i)
   println("i'th element is: " + a1(i))
