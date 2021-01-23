@@ -17,7 +17,7 @@ object topk {
     val start = System.nanoTime
 
     // Call ALTOPK method in a specific dataset
-    new ALTOPK(inputPath="./datasets/dataset_10000_points_4_dimension_anticorrelated_distribution.csv", sc)
+    new ALTOPK(inputPath=args(0), args(1).toInt, sc)
 
     // End timer
     val timeElapsed = System.nanoTime - start

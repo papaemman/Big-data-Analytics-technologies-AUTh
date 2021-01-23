@@ -5,7 +5,7 @@ import org.apache.spark.sql.Row
 
 import scala.collection.mutable.ArrayBuffer
 
-class ALTOPK(inputPath: String, sc: SparkContext) extends Serializable {
+class ALTOPK(inputPath: String, k: Int, sc: SparkContext) extends Serializable {
 
   // Start timer
   val inputTime = System.nanoTime
@@ -32,15 +32,17 @@ class ALTOPK(inputPath: String, sc: SparkContext) extends Serializable {
   //Top-K Points according to Dominance Score (Task 2)
   val rdd2 = rdd.mapPartitions(SFSTopkCalculation.addDominanceScoreAndCalculate)
   rdd2.persist()
-  val rdd2result = rdd2.take(2)
+  val rdd2result = rdd2.take(k)
 
   //Top-K Points according to Dominance Score from Skyline (Task 3)
   var temp = rdd1.toLocalIterator.toArray
   val rdd3 = rdd2.filter(p => SFSTopkCalculation.existsIn(p, temp))
   rdd3.persist()
-  val rdd3result = rdd3.take(3)
+  val rdd3result = rdd3.take(k)
 
-
+  rdd1.saveAsTextFile("./skyline.csv")
+  sc.parallelize(rdd2result).saveAsTextFile("./top-k-from-all.csv")
+  sc.parallelize(rdd3result).saveAsTextFile("./top-k-from-skyline.csv")
 
   // End timer
   val extTime = System.nanoTime
