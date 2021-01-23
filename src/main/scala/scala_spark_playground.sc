@@ -17,4 +17,18 @@ println("RDD object has been created")
 
 // Apply Transformations and Actions to RDD
 val total_elements = distData.count()
-println("Total elements of RDD"+total_elements)
+println("Total elements of RDD: "+total_elements)
+
+
+// Write RDD
+distData.map(a=> {
+  val line = a.toString
+  line
+}).saveAsTextFile(path = "/home/user7/Projects/MSc/Big-data-Analytics-technologies-AUTh/results_temp")
+
+//val myRdd.map{case(a, b) =>
+//  var line = a.toString + "," + b.toString
+//  line
+//}.saveAsTextFile("path");
+
+println("END")

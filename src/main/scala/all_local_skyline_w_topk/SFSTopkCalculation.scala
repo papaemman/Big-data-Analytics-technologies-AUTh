@@ -1,8 +1,5 @@
 package all_local_skyline_w_topk
 
-import org.apache.spark.Partition
-import org.apache.spark.rdd.RDD
-
 import scala.collection.mutable.ArrayBuffer
 import scala.util.control.Breaks.{break, breakable}
 
@@ -18,23 +15,30 @@ object SFSTopkCalculation extends Serializable {
 
     var arraybuffer = x.toArray.map(x => (x,0))
 
-    for (p<-1 to arraybuffer.length-1) {
+    arraybuffer = arraybuffer.map(x => {
       var dominationScore = 0
-
-      for (q <- 1 to arraybuffer.length-1) {
-        if (dominationCondition.isDominated(arraybuffer(q)._1, arraybuffer(p)._1)) {
+      for (q <- 0 until arraybuffer.length) {
+        if (dominationCondition.isDominated(x._1, arraybuffer(q)._1)) {
           dominationScore += 1
         }
       }
-    }
-      return arraybuffer.toIterator
+      (x._1, dominationScore)})
+
+    // Check domination score for each point
+    // arraybuffer.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
+
+    return arraybuffer.toIterator
   }
 
   // 2. sortByDominatingFunction: Sort based on score
-  def sortByDominatingFunction(iterator: Iterator[(Array[Double], Int)]):Iterator[(Array[Double], Int)]= {
+  def sortByDominatingScore(iterator: Iterator[(Array[Double], Int)]):Iterator[(Array[Double], Int)]= {
     var array=iterator.toArray
-    array.sortBy(x => - x._2)
-    return array.toIterator
+    var array_sorted = array.sortBy(x => -x._2)
+
+    // Check sorting
+    // array_sorted.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
+
+    return array_sorted.toIterator
 
   }
 
@@ -42,13 +46,22 @@ object SFSTopkCalculation extends Serializable {
   // 1. dominatedScoreCompute
   // 2. sortByDominatingFunction
 
-  def addDominanceScoreAndCalculate(x: Iterator[Array[Double]]): Iterator[Array[Double]]={
+  def addDominanceScoreAndCalculate(x: Iterator[Array[Double]], k:Int): Iterator[Array[Double]]={
+
+    // Calculate domination score
     val y = dominatedScoreCompute(x)
-    val ysort = sortByDominatingFunction(y)
-    //ysort.toList.foreach(println)
-    val result = ysort.map(x=>x._1)
+
+    // Sort based on domination score
+    val ysort = sortByDominatingScore(y)
+
+    // println("Sorted Array")
+    // ysort.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
+
+    // Return top k points
+    val result = ysort.map(x=>x._1).take(k)
     return result
   }
+
 
   def existsIn(x: Array[Double], y: Array[Array[Double]]): Boolean={
     for(i <- 0 to y.length - 1) {
@@ -59,19 +72,18 @@ object SFSTopkCalculation extends Serializable {
     return false
   }
 
-
   // -------------------------------------------------------------------- //
 
   // calculatePartition:
-  // calculate final Skyline set based on each partition's skyline set
+  // calculate final topk set based on each partition's skyline set
 
-  def calculatePartition(previousSkylines: ArrayBuffer[Array[Double]], enteredPartition: Iterator[Array[Double]]): Iterator[Array[Double]]= {
+  def calculatePartition(previousTopk: ArrayBuffer[Array[Double]], enteredPartition: Iterator[Array[Double]]): Iterator[Array[Double]]= {
 
     var wasEmpty=false
     val array = enteredPartition.toArray
 
-    if(previousSkylines.length==0){
-      previousSkylines += array(0)
+    if(previousTopk.length==0){
+      previousTopk += array(0)
       wasEmpty=true
     }
 
@@ -82,12 +94,12 @@ object SFSTopkCalculation extends Serializable {
       var j = 0
       var breaked = false
       breakable {
-        while (j < previousSkylines.length) {
-          if (dominationCondition.isDominated(array(i), previousSkylines(j))) {
-            previousSkylines.remove(j)
+        while (j < previousTopk.length) {
+          if (dominationCondition.isDominated(array(i), previousTopk(j))) {
+            previousTopk.remove(j)
             j -= 1
           }
-          else if (dominationCondition.isDominated(previousSkylines(j), array(i))) {
+          else if (dominationCondition.isDominated(previousTopk(j), array(i))) {
             breaked = true
             break()
           }
@@ -100,10 +112,12 @@ object SFSTopkCalculation extends Serializable {
         }
       }
       if (!breaked) {
-        previousSkylines += array(i)
+        previousTopk += array(i)
       }
     }
-    return previousSkylines.toIterator
+    return previousTopk.toIterator
   }
 
 }
+
+

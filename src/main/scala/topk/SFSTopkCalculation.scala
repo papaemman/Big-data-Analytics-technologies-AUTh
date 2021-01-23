@@ -25,7 +25,7 @@ object SFSTopkCalculation extends Serializable {
       (x._1, dominationScore)})
 
     // Check domination score for each point
-    arraybuffer.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
+    // arraybuffer.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
 
     return arraybuffer.toIterator
     }
@@ -33,12 +33,12 @@ object SFSTopkCalculation extends Serializable {
   // 2. sortByDominatingFunction: Sort based on score
   def sortByDominatingScore(iterator: Iterator[(Array[Double], Int)]):Iterator[(Array[Double], Int)]= {
     var array=iterator.toArray
+    var array_sorted = array.sortBy(x => -x._2)
 
-    array.sortBy(x => -x._2)
+    // Check sorting
+    // array_sorted.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
 
-    array.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
-
-    return array.toIterator
+    return array_sorted.toIterator
 
   }
 
@@ -46,7 +46,7 @@ object SFSTopkCalculation extends Serializable {
   // 1. dominatedScoreCompute
   // 2. sortByDominatingFunction
 
-  def addDominanceScoreAndCalculate(x: Iterator[Array[Double]]): Iterator[Array[Double]]={
+  def addDominanceScoreAndCalculate(x: Iterator[Array[Double]], k:Int): Iterator[Array[Double]]={
 
     // Calculate domination score
     val y = dominatedScoreCompute(x)
@@ -54,11 +54,11 @@ object SFSTopkCalculation extends Serializable {
     // Sort based on domination score
     val ysort = sortByDominatingScore(y)
 
-    println("Sorted Array")
-    ysort.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
+    // println("Sorted Array")
+    // ysort.foreach(x => println("Point: " + x._1.mkString(",") + " Domination score: " + x._2))
 
     // Return top k points
-    val result = ysort.map(x=>x._1).take(1)
+    val result = ysort.map(x=>x._1).take(k)
     return result
   }
 
@@ -70,13 +70,13 @@ object SFSTopkCalculation extends Serializable {
   // calculatePartition:
   // calculate final topk set based on each partition's skyline set
 
-  def calculatePartition(previousSkylines: ArrayBuffer[Array[Double]], enteredPartition: Iterator[Array[Double]]): Iterator[Array[Double]]= {
+  def calculatePartition(previousTopk: ArrayBuffer[Array[Double]], enteredPartition: Iterator[Array[Double]]): Iterator[Array[Double]]= {
 
     var wasEmpty=false
     val array = enteredPartition.toArray
 
-    if(previousSkylines.length==0){
-      previousSkylines += array(0)
+    if(previousTopk.length==0){
+      previousTopk += array(0)
       wasEmpty=true
     }
 
@@ -87,12 +87,12 @@ object SFSTopkCalculation extends Serializable {
       var j = 0
       var breaked = false
       breakable {
-        while (j < previousSkylines.length) {
-          if (dominationCondition.isDominated(array(i), previousSkylines(j))) {
-            previousSkylines.remove(j)
+        while (j < previousTopk.length) {
+          if (dominationCondition.isDominated(array(i), previousTopk(j))) {
+            previousTopk.remove(j)
             j -= 1
           }
-          else if (dominationCondition.isDominated(previousSkylines(j), array(i))) {
+          else if (dominationCondition.isDominated(previousTopk(j), array(i))) {
             breaked = true
             break()
           }
@@ -105,10 +105,10 @@ object SFSTopkCalculation extends Serializable {
         }
       }
       if (!breaked) {
-        previousSkylines += array(i)
+        previousTopk += array(i)
       }
     }
-    return previousSkylines.toIterator
+    return previousTopk.toIterator
   }
 
 }

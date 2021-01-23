@@ -4,11 +4,12 @@ val a1=Array(Array(4.0,7.0), Array(5.0,2.0),
              Array(3.0,1.0), Array(4.0,1.0),
              Array(1.0,3.0), Array(2.0,4.0))
 
+
 var arraybuffer = a1.toArray.map(x => (x,0))
 println(arraybuffer.length)
 
 val res2 = arraybuffer.map( x => {
-  var dominationScore = 0
+  var dominationScore:Int = 0
   for (q <- 0 until arraybuffer.length-1) {
     if (dominationCondition.isDominated(x._1, arraybuffer(q)._1)) {
       println(arraybuffer(q)._1)
@@ -17,8 +18,12 @@ val res2 = arraybuffer.map( x => {
   }
   (x._1, dominationScore)})
 
-res2.foreach(println)
+//res2.foreach(println)
 
+print("Changed")
+var res3 = res2.sortBy(x => - x._2)
+
+res3.take(1)
 
 
 
