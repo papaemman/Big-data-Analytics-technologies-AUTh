@@ -46,7 +46,7 @@ class ALTOPK(inputPath: String, sc: SparkContext, k: Int, cores:Int) extends Ser
   val topkTime: Long = System.nanoTime
 
   // Top-K Points according to Dominance Score from Skyline (Task 3)
-  var temp: Array[Array[Double]] = rdd1.toLocalIterator.toArray
+  var temp: Array[Array[Double]] = partitionSkylines.toArray
   val rdd3: RDD[Array[Double]] = rdd2.filter(p => SFSTopkCalculation.existsIn(p, temp))
   rdd3.persist()
   val rdd3result: Array[Array[Double]] = rdd3.take(k)

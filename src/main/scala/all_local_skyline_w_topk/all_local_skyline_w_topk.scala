@@ -14,8 +14,9 @@ object all_local_skyline_w_topk {
     //    val cores:Int = args(1).toInt
     //    val k: Int = args(2).toInt
 
-    val datapath: String = "./datasets/toy_dataset_4d.csv"
-    val cores:Int = 3
+    // val datapath: String = "./datasets/dataset_1000000_points_50_dimension_correlated_distribution.csv"
+    val datapath: String = "./datasets/toy_dataset_2d.csv"
+    val cores:Int = 1
     val k: Int = 1
 
     // Define Spark configuration and spark context

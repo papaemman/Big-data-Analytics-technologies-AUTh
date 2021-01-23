@@ -19,11 +19,13 @@ T: Thodoris
     - Task (task1, task2, task3)
     - different number of cores (1,2,4,8)
     - distributions (uniform, normal, correlated, anticorrelated)
-    - dataset dimensions (10.000, 100.000, 1.000.000)
-    - dataset size - number of points (2, 4, 10, 50)
-    - k (from topk): 1, 10, 100
+    - dataset size (10.000, 100.000, 1.000.000)
+    - dataset dimensions - number of points (2, 4, 10, 50)
+    - k (from topk): 1, 10, 50 , 100
     -> **running time for each experiment**
 
+    Total experiments: 4 x 4 x 3 x 4 x 4  = 256 x 3
+  
 - [ ] Create tables, plots to describe experimentation results
 - [ ] Write report
 - [ ] Prepare presentation

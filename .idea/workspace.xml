@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="Task 3 (topk + skyline) debugging&#10;Timing">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/SFSSkylineCalculation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/SFSTopkCalculation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/dominationCondition.scala" afterDir="false" />
+    <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="create an additional package to run multiple experiments for different datasets, number of cores and k">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/experiment_times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/experiment_times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/ALTOPK.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3229885" />
@@ -90,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea\libraries" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea" />
@@ -267,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611419743881</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create an additional package to run multiple experiments for different datasets, number of cores and k">
+      <created>1611420870458</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611420870458</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +313,8 @@
     <MESSAGE value="added code to ALTOPK, with few mods this package could be final" />
     <MESSAGE value="Update Data-generation notebook&#10;Update README, TODO and Docs&#10;Debug topk calculation" />
     <MESSAGE value="Task 3 (topk + skyline) debugging&#10;Timing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 3 (topk + skyline) debugging&#10;Timing" />
+    <MESSAGE value="create an additional package to run multiple experiments for different datasets, number of cores and k" />
+    <option name="LAST_COMMIT_MESSAGE" value="create an additional package to run multiple experiments for different datasets, number of cores and k" />
   </component>
   <component name="WorksheetDefaultProjectSettings">
     <option name="interactive" value="true" />

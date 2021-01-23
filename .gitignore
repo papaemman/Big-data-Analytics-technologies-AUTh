@@ -143,3 +143,6 @@ datasets/*
 
 # Ignore VS Code settings
 .vscode/
+
+# Ignore a big docs
+docs/spark-ui/spark_config_detailed.pdf
