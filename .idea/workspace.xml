@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac1e2f64-44be-42df-9e7e-8f7698aab350" name="Default Changelist" comment="create an additional package to run multiple experiments for different datasets, number of cores and k">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/sample_experiment_spark_logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/2d-anticorrelated.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/2d-anticorrelated.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_gen/.ipynb_checkpoints/Data-generation-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_gen/.ipynb_checkpoints/Data-generation-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_gen/Data-generation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data_gen/Data-generation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.ipynb_checkpoints/Results-Analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.ipynb_checkpoints/Results-Analysis-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Results-Analysis.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bibliography/A_survey_of_skyline_processing_in_highly_distribut.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bibliography/A_survey_of_skyline_processing_in_highly_distribut.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bibliography/Papanikolaou_Ioanna__Dissertation_3308170016.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bibliography/Papanikolaou_Ioanna__Dissertation_3308170016.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/bibliography/isps2015_tpm.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/bibliography/isps2015_tpm.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/experiment_times.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/experiment_times.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/spark-ui/Screenshot from 2021-01-23 18-57-13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/spark-ui/Screenshot from 2021-01-23 22-16-38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments/all_local_skyline_w_topk/all_local_skyline_w_topk.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +102,9 @@
       <recent name="$PROJECT_DIR$/src/main/scala/all_local_skyline_w_topk_experiments" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea\libraries" />
       <recent name="C:\Users\konst\IdeaProjects\Big-data-Analytics-technologies-AUTh\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.all_local_skyline_w_topk">

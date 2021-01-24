@@ -12,7 +12,7 @@ object all_local_skyline_w_topk {
     def getListOfFiles(dir: String): List[String] = {
       val file = new File(dir)
       file.listFiles.filter(_.isFile)
-        .filter(_.getName.startsWith("dataset_10000"))
+        .filter(_.getName.startsWith("dataset_10000_points_50_dimension_anticorrelated_distribution"))
         .map(_.getPath).toList
     }
 
@@ -20,9 +20,9 @@ object all_local_skyline_w_topk {
     val datapaths_ls = getListOfFiles("./datasets")
     println("Total datapaths:" + datapaths_ls.length)
     // val datapaths_ls = List("toy_dataset_2d.csv", "toy_dataset_4d.csv")
-    val cores_ls = List(1,2,4,8)
-    val k_ls = List(1,10,50,100)
-
+    val cores_ls = List(8,4,2,1)
+    // val k_ls = List(1,10,50,100)
+    val k_ls = List(1)
 
     for(datapath <- datapaths_ls){
       for(cores <- cores_ls){

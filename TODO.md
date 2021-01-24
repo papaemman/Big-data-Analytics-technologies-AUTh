@@ -15,7 +15,7 @@ T: Thodoris
 - [X] Solve Tasks (Task1, Task2, Task3) for a toy dataset
 - [X] Test solution  using a toy dataset
 
-- [ ] Experimentation process - Time solutions:
+- [X] Experimentation process - Time solutions:
     - Task (task1, task2, task3)
     - different number of cores (1,2,4,8)
     - distributions (uniform, normal, correlated, anticorrelated)
@@ -26,12 +26,10 @@ T: Thodoris
 
     Total experiments: 4 x 4 x 3 x 4 x 4  = 256 x 3
   
-- [ ] Create tables, plots to describe experimentation results
-- [ ] Write report
-- [ ] Prepare presentation
-- [ ] Presentation practice
-- [ ] Submit assignment
-
-- [ ] Search for a suitable Real Estate dataset from UCI repository or kaggle (P)
+- [X] Create tables, plots to describe experimentation results
+- [X] Write report
+- [X] Prepare presentation
+- [X] Presentation practice
+- [X] Submit assignment
 
 **The END**
